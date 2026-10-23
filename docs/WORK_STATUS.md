@@ -45,7 +45,7 @@ Last verified on 2026-10-23:
 
 ## Next action
 
-Push the tested baseline to `https://github.com/joboyebisi/beeshealth.git` on `main`. The remote was verified empty on 2026-10-23, so there is no existing history to reconcile. Then begin the first real vertical slice: AWS identity/deployment foundation plus a small authenticated API and health check.
+Begin the first real vertical slice: establish AWS identity/deployment configuration, then add a small authenticated API and deployed health check. Confirm the intended AWS region and configure an AWS SSO profile or short-lived deployment role before writing infrastructure.
 
 ## Credential onboarding order
 
@@ -65,7 +65,8 @@ Follow `docs/SETUP_AND_CREDENTIALS.md`. Ask for one integration at a time. Sourc
 - The server has no API routes or production security headers.
 - Browser actions are currently UI simulations and do not persist.
 - A hackathon state/checklist has not been initialized in this folder.
-- GitHub CLI's saved `joboyebisi` token was reported invalid on 2026-10-23. A normal Git push may still use Git Credential Manager; otherwise reauthenticate with `gh auth login` without sharing a token in chat.
+- Source control is live at `https://github.com/joboyebisi/beeshealth.git`. Commit `9b251c8` was pushed to `main` on 2026-10-23.
+- GitHub CLI's saved `joboyebisi` token was reported invalid, but Git Credential Manager authenticated the push successfully. Reauthenticate `gh` later only if GitHub CLI features are needed.
 
 ## Latest implementation note
 
